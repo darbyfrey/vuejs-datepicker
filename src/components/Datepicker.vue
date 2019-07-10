@@ -252,6 +252,9 @@ export default {
         return this.close(true)
       }
       this.setInitialView()
+      if (!this.isInline) {
+        this.$emit('opened')
+      }
     },
     /**
      * Sets the initial picker page view: day, month or year
