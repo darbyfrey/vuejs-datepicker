@@ -24,7 +24,7 @@
           v-html="dayCellContent(day)"
           @click="selectDate(day)"></span>
     </div>
-    <div class="vdp-datepicker__clear">Clear</div>
+    <div @click="clearDate()" class="vdp-datepicker__clear">Clear</div>
   </div>
 </template>
 <script>

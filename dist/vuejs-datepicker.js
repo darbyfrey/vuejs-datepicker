@@ -1228,7 +1228,18 @@
           2
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "vdp-datepicker__clear" }, [_vm._v("Clear")])
+        _c(
+          "div",
+          {
+            staticClass: "vdp-datepicker__clear",
+            on: {
+              click: function($event) {
+                return _vm.clearDate()
+              }
+            }
+          },
+          [_vm._v("Clear")]
+        )
       ],
       2
     )
