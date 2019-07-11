@@ -51,7 +51,8 @@
       @changedMonth="handleChangedMonthFromDayPicker"
       @selectDate="selectDate"
       @showMonthCalendar="showMonthCalendar"
-      @selectedDisabled="selectDisabledDate">
+      @selectedDisabled="selectDisabledDate"
+      @clearDate="clearDate">
       <slot name="beforeCalendarHeader" slot="beforeCalendarHeader"></slot>
     </picker-day>
 
