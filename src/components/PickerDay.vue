@@ -24,6 +24,7 @@
           v-html="dayCellContent(day)"
           @click="selectDate(day)"></span>
     </div>
+    <div class="vdp-datepicker__clear">Clear</div>
   </div>
 </template>
 <script>
@@ -182,6 +183,12 @@ export default {
       let date = this.pageDate
       this.utils.setMonth(date, this.utils.getMonth(date) + incrementBy)
       this.$emit('changedMonth', date)
+    },
+    /**
+     * Clear the date value
+     */
+    clearDate () {
+      this.$emit('clearDate')
     },
     /**
      * Decrement the page month

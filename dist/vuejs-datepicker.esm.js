@@ -902,6 +902,13 @@ var script$1 = {
     },
 
     /**
+     * Clear the date value
+     */
+    clearDate: function clearDate() {
+      this.$emit('clearDate');
+    },
+
+    /**
      * Decrement the page month
      */
     previousMonth: function previousMonth() {
@@ -1213,7 +1220,9 @@ var __vue_render__$1 = function() {
           })
         ],
         2
-      )
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "vdp-datepicker__clear" }, [_vm._v("Clear")])
     ],
     2
   )

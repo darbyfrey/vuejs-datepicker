@@ -908,6 +908,13 @@
       },
 
       /**
+       * Clear the date value
+       */
+      clearDate: function clearDate() {
+        this.$emit('clearDate');
+      },
+
+      /**
        * Decrement the page month
        */
       previousMonth: function previousMonth() {
@@ -1219,7 +1226,9 @@
             })
           ],
           2
-        )
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "vdp-datepicker__clear" }, [_vm._v("Clear")])
       ],
       2
     )
